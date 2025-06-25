@@ -1,0 +1,130 @@
+make  all-recursive
+make[1]: Entering directory 'H:/tmp/GAME-SDL-PUZZLE-Alizarin_Tetris'
+Making all in .protos
+make[2]: Entering directory 'H:/tmp/GAME-SDL-PUZZLE-Alizarin_Tetris/.protos'
+make[2]: Nothing to be done for 'all'.
+make[2]: Leaving directory 'H:/tmp/GAME-SDL-PUZZLE-Alizarin_Tetris/.protos'
+Making all in graphics
+make[2]: Entering directory 'H:/tmp/GAME-SDL-PUZZLE-Alizarin_Tetris/graphics'
+make[2]: Nothing to be done for 'all'.
+make[2]: Leaving directory 'H:/tmp/GAME-SDL-PUZZLE-Alizarin_Tetris/graphics'
+Making all in styles
+make[2]: Entering directory 'H:/tmp/GAME-SDL-PUZZLE-Alizarin_Tetris/styles'
+make[2]: Nothing to be done for 'all'.
+make[2]: Leaving directory 'H:/tmp/GAME-SDL-PUZZLE-Alizarin_Tetris/styles'
+Making all in Docs
+make[2]: Entering directory 'H:/tmp/GAME-SDL-PUZZLE-Alizarin_Tetris/Docs'
+make[2]: Nothing to be done for 'all'.
+make[2]: Leaving directory 'H:/tmp/GAME-SDL-PUZZLE-Alizarin_Tetris/Docs'
+make[2]: Entering directory 'H:/tmp/GAME-SDL-PUZZLE-Alizarin_Tetris'
+gcc -DHAVE_CONFIG_H -I. -I.protos    -g -O2 -Wall -Wimplicit -Wsign-compare -Wpointer-arith -Ih:/tmp/SDL/h -DATRIS_LIBDIR=\"/usr/local/games/atris\" -MT ai.o -MD -MP -MF .deps/ai.Tpo -c -o ai.o ai.c
+mv -f .deps/ai.Tpo .deps/ai.Po
+gcc -DHAVE_CONFIG_H -I. -I.protos    -g -O2 -Wall -Wimplicit -Wsign-compare -Wpointer-arith -Ih:/tmp/SDL/h -DATRIS_LIBDIR=\"/usr/local/games/atris\" -MT atris.o -MD -MP -MF .deps/atris.Tpo -c -o atris.o atris.c
+atris.c: In function 'play_AI_VS_AI':
+atris.c:408:9: warning: variable 'their_adj' set but not used [-Wunused-but-set-variable]
+  408 |     int their_adj[3];   /* their three winnings so far */
+      |         ^~~~~~~~~
+atris.c:407:9: warning: variable 'my_adj' set but not used [-Wunused-but-set-variable]
+  407 |     int my_adj[3];   /* my three winnings so far */
+      |         ^~~~~~
+atris.c:404:9: warning: variable 'match' set but not used [-Wunused-but-set-variable]
+  404 |     int match;
+      |         ^~~~~
+mv -f .deps/atris.Tpo .deps/atris.Po
+gcc -DHAVE_CONFIG_H -I. -I.protos    -g -O2 -Wall -Wimplicit -Wsign-compare -Wpointer-arith -Ih:/tmp/SDL/h -DATRIS_LIBDIR=\"/usr/local/games/atris\" -MT button.o -MD -MP -MF .deps/button.Tpo -c -o button.o button.c
+mv -f .deps/button.Tpo .deps/button.Po
+gcc -DHAVE_CONFIG_H -I. -I.protos    -g -O2 -Wall -Wimplicit -Wsign-compare -Wpointer-arith -Ih:/tmp/SDL/h -DATRIS_LIBDIR=\"/usr/local/games/atris\" -MT display.o -MD -MP -MF .deps/display.Tpo -c -o display.o display.c
+mv -f .deps/display.Tpo .deps/display.Po
+gcc -DHAVE_CONFIG_H -I. -I.protos    -g -O2 -Wall -Wimplicit -Wsign-compare -Wpointer-arith -Ih:/tmp/SDL/h -DATRIS_LIBDIR=\"/usr/local/games/atris\" -MT event.o -MD -MP -MF .deps/event.Tpo -c -o event.o event.c
+event.c: In function 'event_loop':
+event.c:1134:29: warning: pointer targets in passing argument 3 of 'do_pause' differ in signedness [-Wpointer-sign]
+ 1134 |    do_pause(paused, tv_now, &pause_begin_time, &tv_start);
+      |                             ^~~~~~~~~~~~~~~~~
+      |                             |
+      |                             Uint32 * {aka unsigned int *}
+event.c:573:42: note: expected 'int *' but argument is of type 'Uint32 *' {aka 'unsigned int *'}
+  573 | do_pause(int paused, Uint32 tv_now, int *pause_begin_time, int *tv_start)
+      |                                     ~~~~~^~~~~~~~~~~~~~~~
+event.c:1134:48: warning: pointer targets in passing argument 4 of 'do_pause' differ in signedness [-Wpointer-sign]
+ 1134 |    do_pause(paused, tv_now, &pause_begin_time, &tv_start);
+      |                                                ^~~~~~~~~
+      |                                                |
+      |                                                Uint32 * {aka unsigned int *}
+event.c:573:65: note: expected 'int *' but argument is of type 'Uint32 *' {aka 'unsigned int *'}
+  573 | do_pause(int paused, Uint32 tv_now, int *pause_begin_time, int *tv_start)
+      |                                                            ~~~~~^~~~~~~~
+event.c:1334:30: warning: pointer targets in passing argument 3 of 'do_pause' differ in signedness [-Wpointer-sign]
+ 1334 |     do_pause(paused, tv_now, &pause_begin_time, &tv_start);
+      |                              ^~~~~~~~~~~~~~~~~
+      |                              |
+      |                              Uint32 * {aka unsigned int *}
+event.c:573:42: note: expected 'int *' but argument is of type 'Uint32 *' {aka 'unsigned int *'}
+  573 | do_pause(int paused, Uint32 tv_now, int *pause_begin_time, int *tv_start)
+      |                                     ~~~~~^~~~~~~~~~~~~~~~
+event.c:1334:49: warning: pointer targets in passing argument 4 of 'do_pause' differ in signedness [-Wpointer-sign]
+ 1334 |     do_pause(paused, tv_now, &pause_begin_time, &tv_start);
+      |                                                 ^~~~~~~~~
+      |                                                 |
+      |                                                 Uint32 * {aka unsigned int *}
+event.c:573:65: note: expected 'int *' but argument is of type 'Uint32 *' {aka 'unsigned int *'}
+  573 | do_pause(int paused, Uint32 tv_now, int *pause_begin_time, int *tv_start)
+      |                                                            ~~~~~^~~~~~~~
+mv -f .deps/event.Tpo .deps/event.Po
+gcc -DHAVE_CONFIG_H -I. -I.protos    -g -O2 -Wall -Wimplicit -Wsign-compare -Wpointer-arith -Ih:/tmp/SDL/h -DATRIS_LIBDIR=\"/usr/local/games/atris\" -MT fastrand.o -MD -MP -MF .deps/fastrand.Tpo -c -o fastrand.o fastrand.c
+mv -f .deps/fastrand.Tpo .deps/fastrand.Po
+gcc -DHAVE_CONFIG_H -I. -I.protos    -g -O2 -Wall -Wimplicit -Wsign-compare -Wpointer-arith -Ih:/tmp/SDL/h -DATRIS_LIBDIR=\"/usr/local/games/atris\" -MT gamemenu.o -MD -MP -MF .deps/gamemenu.Tpo -c -o gamemenu.o gamemenu.c
+mv -f .deps/gamemenu.Tpo .deps/gamemenu.Po
+gcc -DHAVE_CONFIG_H -I. -I.protos    -g -O2 -Wall -Wimplicit -Wsign-compare -Wpointer-arith -Ih:/tmp/SDL/h -DATRIS_LIBDIR=\"/usr/local/games/atris\" -MT grid.o -MD -MP -MF .deps/grid.Tpo -c -o grid.o grid.c
+grid.c: In function 'draw_grid':
+grid.c:130:3: warning: this 'if' clause does not guard... [-Wmisleading-indentation]
+  130 |   if (i < mini) mini = i; if (j < minj) minj = j;
+      |   ^~
+grid.c:130:27: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the 'if'
+  130 |   if (i < mini) mini = i; if (j < minj) minj = j;
+      |                           ^~
+grid.c:131:3: warning: this 'if' clause does not guard... [-Wmisleading-indentation]
+  131 |   if (i > maxi) maxi = i; if (j > maxj) maxj = j;
+      |   ^~
+grid.c:131:27: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the 'if'
+  131 |   if (i > maxi) maxi = i; if (j > maxj) maxj = j;
+      |                           ^~
+grid.c:205:3: warning: this 'if' clause does not guard... [-Wmisleading-indentation]
+  205 |   if (i < mini) mini = i; if (j < minj) minj = j;
+      |   ^~
+grid.c:205:27: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the 'if'
+  205 |   if (i < mini) mini = i; if (j < minj) minj = j;
+      |                           ^~
+grid.c:206:3: warning: this 'if' clause does not guard... [-Wmisleading-indentation]
+  206 |   if (i > maxi) maxi = i; if (j > maxj) maxj = j;
+      |   ^~
+grid.c:206:27: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the 'if'
+  206 |   if (i > maxi) maxi = i; if (j > maxj) maxj = j;
+      |                           ^~
+mv -f .deps/grid.Tpo .deps/grid.Po
+gcc -DHAVE_CONFIG_H -I. -I.protos    -g -O2 -Wall -Wimplicit -Wsign-compare -Wpointer-arith -Ih:/tmp/SDL/h -DATRIS_LIBDIR=\"/usr/local/games/atris\" -MT highscore.o -MD -MP -MF .deps/highscore.Tpo -c -o highscore.o highscore.c
+mv -f .deps/highscore.Tpo .deps/highscore.Po
+gcc -DHAVE_CONFIG_H -I. -I.protos    -g -O2 -Wall -Wimplicit -Wsign-compare -Wpointer-arith -Ih:/tmp/SDL/h -DATRIS_LIBDIR=\"/usr/local/games/atris\" -MT identity.o -MD -MP -MF .deps/identity.Tpo -c -o identity.o identity.c
+mv -f .deps/identity.Tpo .deps/identity.Po
+gcc -DHAVE_CONFIG_H -I. -I.protos    -g -O2 -Wall -Wimplicit -Wsign-compare -Wpointer-arith -Ih:/tmp/SDL/h -DATRIS_LIBDIR=\"/usr/local/games/atris\" -MT menu.o -MD -MP -MF .deps/menu.Tpo -c -o menu.o menu.c
+mv -f .deps/menu.Tpo .deps/menu.Po
+gcc -DHAVE_CONFIG_H -I. -I.protos    -g -O2 -Wall -Wimplicit -Wsign-compare -Wpointer-arith -Ih:/tmp/SDL/h -DATRIS_LIBDIR=\"/usr/local/games/atris\" -MT network.o -MD -MP -MF .deps/network.Tpo -c -o network.o network.c
+network.c: In function 'Server_AwaitConnection':
+network.c:114:52: warning: pointer targets in passing argument 3 of 'accept' differ in signedness [-Wpointer-sign]
+  114 |   sock=accept(sockListen, (struct sockaddr *)&addr,&addrLen);
+      |                                                    ^~~~~~~~
+      |                                                    |
+      |                                                    int *
+In file included from network.c:29:
+W:/usr/include/sys/socket.h:464:49: note: expected 'socklen_t *' {aka 'unsigned int *'} but argument is of type 'int *'
+  464 | int     TCPCALL accept (int, struct sockaddr *, socklen_t *);
+      |                                                 ^~~~~~~~~~~
+mv -f .deps/network.Tpo .deps/network.Po
+gcc -DHAVE_CONFIG_H -I. -I.protos    -g -O2 -Wall -Wimplicit -Wsign-compare -Wpointer-arith -Ih:/tmp/SDL/h -DATRIS_LIBDIR=\"/usr/local/games/atris\" -MT piece.o -MD -MP -MF .deps/piece.Tpo -c -o piece.o piece.c
+mv -f .deps/piece.Tpo .deps/piece.Po
+gcc -DHAVE_CONFIG_H -I. -I.protos    -g -O2 -Wall -Wimplicit -Wsign-compare -Wpointer-arith -Ih:/tmp/SDL/h -DATRIS_LIBDIR=\"/usr/local/games/atris\" -MT sound.o -MD -MP -MF .deps/sound.Tpo -c -o sound.o sound.c
+mv -f .deps/sound.Tpo .deps/sound.Po
+gcc -DHAVE_CONFIG_H -I. -I.protos    -g -O2 -Wall -Wimplicit -Wsign-compare -Wpointer-arith -Ih:/tmp/SDL/h -DATRIS_LIBDIR=\"/usr/local/games/atris\" -MT xflame.o -MD -MP -MF .deps/xflame.Tpo -c -o xflame.o xflame.c
+mv -f .deps/xflame.Tpo .deps/xflame.Po
+gcc  -g -O2 -Wall -Wimplicit -Wsign-compare -Wpointer-arith -Ih:/tmp/SDL/h -DATRIS_LIBDIR=\"/usr/local/games/atris\"   -o atris.exe ai.o atris.o button.o display.o event.o fastrand.o gamemenu.o grid.o highscore.o identity.o menu.o network.o piece.o sound.o xflame.o  -Lh:/tmp/SDL/lib -Zomf -lsdl12 -lSDL_ttf
+make[2]: Leaving directory 'H:/tmp/GAME-SDL-PUZZLE-Alizarin_Tetris'
+make[1]: Leaving directory 'H:/tmp/GAME-SDL-PUZZLE-Alizarin_Tetris'

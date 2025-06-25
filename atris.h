@@ -19,7 +19,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <errno.h>
-#include "SDL.h"
+#include "SDL/SDL.h"
 
 /* configure magic for string.h */
 #if STDC_HEADERS

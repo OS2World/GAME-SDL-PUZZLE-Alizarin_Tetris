@@ -1,0 +1,170 @@
+fastrand.o: fastrand.c config.h atris.h \
+ W:/usr/lib/gcc/i686-pc-os2-emx/9/include-fixed/stdio.h \
+ W:/usr/lib/gcc/i686-pc-os2-emx/9/include/stdarg.h \
+ W:/usr/include/sys/cdefs.h W:/usr/include/sys/gnu/cdefs.h \
+ W:/usr/include/features.h W:/usr/include/sys/_types.h \
+ W:/usr/include/machine/_types.h W:/usr/include/386/_types.h \
+ W:/usr/lib/gcc/i686-pc-os2-emx/9/include-fixed/stdlib.h \
+ W:/usr/include/sys/_null.h W:/usr/include/malloc.h \
+ W:/usr/include/errno.h W:/usr/include/sys/errno.h h:/tmp/SDL/h/SDL/SDL.h \
+ h:/tmp/SDL/h/SDL/SDL_main.h h:/tmp/SDL/h/SDL/SDL_stdinc.h \
+ h:/tmp/SDL/h/SDL/SDL_config.h h:/tmp/SDL/h/SDL/SDL_platform.h \
+ h:/tmp/SDL/h/SDL/SDL_config_os2.h \
+ W:/usr/lib/gcc/i686-pc-os2-emx/9/include-fixed/sys/types.h \
+ W:/usr/include/machine/endian.h W:/usr/include/386/endian.h \
+ W:/usr/include/sys/select.h W:/usr/include/sys/_sigset.h \
+ W:/usr/lib/gcc/i686-pc-os2-emx/9/include-fixed/stddef.h \
+ W:/usr/include/string.h W:/usr/include/strings.h \
+ W:/usr/include/inttypes.h W:/usr/include/machine/_inttypes.h \
+ W:/usr/include/386/_inttypes.h W:/usr/include/sys/stdint.h \
+ W:/usr/include/machine/_stdint.h W:/usr/include/386/_stdint.h \
+ W:/usr/include/machine/_limits.h W:/usr/include/386/_limits.h \
+ W:/usr/include/ctype.h W:/usr/include/_ctype.h \
+ h:/tmp/SDL/h/SDL/begin_code.h h:/tmp/SDL/h/SDL/close_code.h \
+ h:/tmp/SDL/h/SDL/SDL_audio.h h:/tmp/SDL/h/SDL/SDL_error.h \
+ h:/tmp/SDL/h/SDL/SDL_endian.h h:/tmp/SDL/h/SDL/SDL_mutex.h \
+ h:/tmp/SDL/h/SDL/SDL_thread.h W:/usr/include/process.h \
+ W:/usr/include/sys/process.h h:/tmp/SDL/h/SDL/SDL_rwops.h \
+ h:/tmp/SDL/h/SDL/SDL_cdrom.h h:/tmp/SDL/h/SDL/SDL_cpuinfo.h \
+ h:/tmp/SDL/h/SDL/SDL_events.h h:/tmp/SDL/h/SDL/SDL_active.h \
+ h:/tmp/SDL/h/SDL/SDL_keyboard.h h:/tmp/SDL/h/SDL/SDL_keysym.h \
+ h:/tmp/SDL/h/SDL/SDL_mouse.h h:/tmp/SDL/h/SDL/SDL_video.h \
+ h:/tmp/SDL/h/SDL/SDL_joystick.h h:/tmp/SDL/h/SDL/SDL_quit.h \
+ h:/tmp/SDL/h/SDL/SDL_loadso.h h:/tmp/SDL/h/SDL/SDL_timer.h \
+ h:/tmp/SDL/h/SDL/SDL_version.h W:/usr/include/sys/time.h \
+ W:/usr/include/sys/_timeval.h W:/usr/include/sys/timespec.h \
+ W:/usr/include/time.h .protos/atris.pro
+
+config.h:
+
+atris.h:
+
+W:/usr/lib/gcc/i686-pc-os2-emx/9/include-fixed/stdio.h:
+
+W:/usr/lib/gcc/i686-pc-os2-emx/9/include/stdarg.h:
+
+W:/usr/include/sys/cdefs.h:
+
+W:/usr/include/sys/gnu/cdefs.h:
+
+W:/usr/include/features.h:
+
+W:/usr/include/sys/_types.h:
+
+W:/usr/include/machine/_types.h:
+
+W:/usr/include/386/_types.h:
+
+W:/usr/lib/gcc/i686-pc-os2-emx/9/include-fixed/stdlib.h:
+
+W:/usr/include/sys/_null.h:
+
+W:/usr/include/malloc.h:
+
+W:/usr/include/errno.h:
+
+W:/usr/include/sys/errno.h:
+
+h:/tmp/SDL/h/SDL/SDL.h:
+
+h:/tmp/SDL/h/SDL/SDL_main.h:
+
+h:/tmp/SDL/h/SDL/SDL_stdinc.h:
+
+h:/tmp/SDL/h/SDL/SDL_config.h:
+
+h:/tmp/SDL/h/SDL/SDL_platform.h:
+
+h:/tmp/SDL/h/SDL/SDL_config_os2.h:
+
+W:/usr/lib/gcc/i686-pc-os2-emx/9/include-fixed/sys/types.h:
+
+W:/usr/include/machine/endian.h:
+
+W:/usr/include/386/endian.h:
+
+W:/usr/include/sys/select.h:
+
+W:/usr/include/sys/_sigset.h:
+
+W:/usr/lib/gcc/i686-pc-os2-emx/9/include-fixed/stddef.h:
+
+W:/usr/include/string.h:
+
+W:/usr/include/strings.h:
+
+W:/usr/include/inttypes.h:
+
+W:/usr/include/machine/_inttypes.h:
+
+W:/usr/include/386/_inttypes.h:
+
+W:/usr/include/sys/stdint.h:
+
+W:/usr/include/machine/_stdint.h:
+
+W:/usr/include/386/_stdint.h:
+
+W:/usr/include/machine/_limits.h:
+
+W:/usr/include/386/_limits.h:
+
+W:/usr/include/ctype.h:
+
+W:/usr/include/_ctype.h:
+
+h:/tmp/SDL/h/SDL/begin_code.h:
+
+h:/tmp/SDL/h/SDL/close_code.h:
+
+h:/tmp/SDL/h/SDL/SDL_audio.h:
+
+h:/tmp/SDL/h/SDL/SDL_error.h:
+
+h:/tmp/SDL/h/SDL/SDL_endian.h:
+
+h:/tmp/SDL/h/SDL/SDL_mutex.h:
+
+h:/tmp/SDL/h/SDL/SDL_thread.h:
+
+W:/usr/include/process.h:
+
+W:/usr/include/sys/process.h:
+
+h:/tmp/SDL/h/SDL/SDL_rwops.h:
+
+h:/tmp/SDL/h/SDL/SDL_cdrom.h:
+
+h:/tmp/SDL/h/SDL/SDL_cpuinfo.h:
+
+h:/tmp/SDL/h/SDL/SDL_events.h:
+
+h:/tmp/SDL/h/SDL/SDL_active.h:
+
+h:/tmp/SDL/h/SDL/SDL_keyboard.h:
+
+h:/tmp/SDL/h/SDL/SDL_keysym.h:
+
+h:/tmp/SDL/h/SDL/SDL_mouse.h:
+
+h:/tmp/SDL/h/SDL/SDL_video.h:
+
+h:/tmp/SDL/h/SDL/SDL_joystick.h:
+
+h:/tmp/SDL/h/SDL/SDL_quit.h:
+
+h:/tmp/SDL/h/SDL/SDL_loadso.h:
+
+h:/tmp/SDL/h/SDL/SDL_timer.h:
+
+h:/tmp/SDL/h/SDL/SDL_version.h:
+
+W:/usr/include/sys/time.h:
+
+W:/usr/include/sys/_timeval.h:
+
+W:/usr/include/sys/timespec.h:
+
+W:/usr/include/time.h:
+
+.protos/atris.pro:

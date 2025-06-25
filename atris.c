@@ -11,9 +11,9 @@
 #include <stdarg.h>
 #include <sys/stat.h>
 
-#include "SDL.h"
-#include "SDL_main.h"
-#include "SDL_ttf.h"
+#include "SDL/SDL.h"
+#include "SDL/SDL_main.h"
+#include "SDL/SDL_ttf.h"
 
 #if HAVE_SYS_SOCKET_H
 #	include <sys/socket.h>

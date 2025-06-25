@@ -7,7 +7,7 @@
 #ifndef __DISPLAY_H
 #define __DISPLAY_H
 
-#include "SDL_ttf.h"
+#include "SDL/SDL_ttf.h"
 
 SDL_Color color_white;
 SDL_Color color_black;
