@@ -127,6 +127,9 @@ extern Uint16 FastRandom(Uint16 range);
 #define ADJUST_SAME	1
 #define ADJUST_DOWN	2
 
+/* Avoid a buffer overflow */
+#define SPRINTF(buf, fmt, args...) snprintf(buf, sizeof(buf), fmt, ## args)
+
 #include "atris.pro"
 
 #endif /* __ATRIS_H */
